@@ -4,4 +4,24 @@ textarea {
 
 .emailmsg {
     cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 
+    2px 0 0 0 #888, 
+    0 2px 0 0 #888, 
+    2px 2px 0 0 #888,   /* Just to fix the corner */
+    2px 0 0 0 #888 inset, 
+    0 2px 0 0 #888 inset;
+}
+
+.emailmsg:hover {
+    font-weight: bold;
+}
+
+#emailbody {
+    white-space: pre-line;
+}
+
+#archivebtn, #replybtn {
+    margin: 5px; 
 }
