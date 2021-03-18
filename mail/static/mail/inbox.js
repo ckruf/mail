@@ -53,7 +53,7 @@ function send_email() {
   .then(result => {
     console.log(result);
   });
-  load_mailbox('sent');
+  setTimeout(function(){ load_mailbox('sent'); }, 100);
 }
 
 //This function shows the mailbox view, hides other views and fetches the emails via an API request
@@ -217,7 +217,7 @@ function archive_email(id) {
     })
   })
 
-  load_mailbox('inbox');
+  setTimeout(function(){ load_mailbox('archive'); }, 100);
 }
 
 function unarchive_email(id) {
@@ -228,5 +228,5 @@ function unarchive_email(id) {
     })
   })
 
-  load_mailbox('inbox');
+  setTimeout(function(){ load_mailbox('inbox'); }, 100);
 }
